@@ -50,7 +50,7 @@ router.delete("/:id", async (req, res) => {
 });
 
 //create a product
-router.post("/", checkRating, validateURL, async (req, res) => {
+router.post("/new", checkRating, validateURL, async (req, res) => {
   let result = await createProduct(req.body);
 
   if (Object.keys(result).length === 0) {
@@ -61,7 +61,7 @@ router.post("/", checkRating, validateURL, async (req, res) => {
 });
 
 //uodate a product by id
-router.put("/:id", checkRating, validateURL, async (req, res) => {
+router.put("/edit/:id", checkRating, validateURL, async (req, res) => {
   const { id } = req.params;
   let result = await updateProductById(req.body, id);
 

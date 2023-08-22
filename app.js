@@ -12,7 +12,7 @@ app.use(express.json());
 const productsController = require("./controllers/commerceController");
 
 app.get("/", (req, res) => {
-  res.send("Welcome to Karma's store");
+  res.send("Welcome to KARMA store");
 });
 
 app.use("/products", productsController);

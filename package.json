@@ -14,7 +14,6 @@
   "name": "e-commerce-backend",
   "version": "1.0.0",
   "main": "server.js",
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/KarmaG-7/portfolio_Ecommerce.git"
